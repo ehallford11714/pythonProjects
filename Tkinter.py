@@ -10,7 +10,7 @@ def insert():
     if(id=="" or name=="" or phone == ""):
         MessageBox.showinfo("Insert Status","All Fields are required")
     else:
-        con = mysql.connect(host="localhost",user="root",password="Eha888444&",db="Python")
+        con = mysql.connect(host="localhost",user="root",password="",db="Python")
         cursor = con.cursor()
         cursor.execute("insert into student values('" + id + "','"+ name + "','" + phone +"')")
         cursor.execute("commit")
